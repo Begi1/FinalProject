@@ -1,0 +1,5 @@
+<div class="card" *ngFor="let product of products">
+    <img [src]="product.product.image" alt="">
+    <h1>{{product.product.name}}</h1>
+    <button (click)="productsService.deleteProductFromBasket(product.product.id)">Delete</button>
+</div>

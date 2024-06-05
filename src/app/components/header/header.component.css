@@ -1,0 +1,9 @@
+div {
+    display: flex;
+    gap: 50px;
+    border: 2px solid purple;
+}
+
+h1 {
+    cursor: pointer;
+}
