@@ -30,4 +30,8 @@ export class ProductsService {
     this.http.post("https://restaurant.stepprojects.ge/api/Baskets/AddToBasket", product).subscribe()
   }
 
+  deleteProductFromBasketOther(id: number) {
+    this.http.delete("https://restaurant.stepprojects.ge/api/Baskets/DeleteProduct/" + id).subscribe()
+  }
+
 }
